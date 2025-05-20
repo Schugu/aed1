@@ -1,13 +1,13 @@
 /*
-	Diseñe un algoritmo que emita el ticket con el importe a pagar 
+	DiseÃ±e un algoritmo que emita el ticket con el importe a pagar 
 	en un supermercado considerando los datos: cantidad y precio 
 	del producto. Imprimir el ticket tomando como referencia el 
-	diseño de este ticket de ejemplo:
+	diseÃ±o de este ticket de ejemplo:
  		Cant. unidades: 5 - Precio unit.: $ 10.50  
 		Total: $ 52.50 
-		¡Gracias por su compra!
+		Â¡Gracias por su compra!
 	
-	Método de resolución de problemas:
+	MÃ©todo de resoluciÃ³n de problemas:
 		Objetivo: Imprimir un ticket de compra conciderando los datos cantidad y precio.
 		Estrategia: 
 			1.ingresarDatos
@@ -18,7 +18,7 @@
 		Cant. unidades | Precio unit. | Total
 		  24		   |   2.5        |   60
 		  10		   |   25         |   250
-		  5		   	   |   82         |   410				
+		  5		   |   82         |   410				
 */
 
 // Bibliotecas
@@ -35,7 +35,7 @@ int cantidad;
 float precio;
 float total;
 
-// Función principal
+// FunciÃ³n principal
 int main(){
 	inicializarVariables();
 	ingresarDatos();
@@ -67,6 +67,6 @@ void procesarDatos(){
 void imprimirTicket(){
 	printf("Cant. unidades: %d - Precio unit.: $ %.2f\n", cantidad, precio);
 	printf("Total: $ %.2f\n", total);
-	printf("¡Gracias por su compra!");
+	printf("Â¡Gracias por su compra!");
 }
 
