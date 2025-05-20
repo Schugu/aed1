@@ -9,6 +9,12 @@
 			1.ingresarDatos
 			2.calcularPorcentaje
 			3.mostrarResultado
+			
+	Casos de prueba: 
+		Total Partidos | Partidos Ganados | Resultado 
+		   20		   |    10			  |	   50%
+		   100		   |    20			  |	   20%
+		   9		   |    5			  |	   55.56%	   					
 */
 
 // Bibliotecas 
@@ -21,7 +27,7 @@ float calcularPorcentaje(int cantPartidos, int cantPartidosGanados);
 void mostrarResultado();
 
 // Variables globales
-int cantPartidos;
+int totalPartidos;
 int cantPartidosGanados;
 
 // Función principal 
@@ -35,24 +41,30 @@ int main (){
 
 // Funciones
 void inicializarVariables(){
-	cantPartidos = 0;
+	totalPartidos = 0;
 	cantPartidosGanados = 0;
 }
 
 void ingresarDatos(){
 	printf("Ingrese el total de partidos: ");
-	scanf("%d", &cantPartidos);
+	scanf("%d", &totalPartidos);
 	
 	printf("Ingrese el total de partidos ganados: ");
 	scanf("%d", &cantPartidosGanados);
 }
 
-float calcularPorcentaje(int cantPartidos, int cantPartidosGanados){
-	return ((float)cantPartidosGanados / cantPartidos) * 100;
+float calcularPorcentaje(int totalPartidos, int cantPartidosGanados){
+	return ((float)cantPartidosGanados / totalPartidos) * 100;
 }
 
 void mostrarResultado(){
-	printf("Porcentaje de partidos ganados: %.2f%%", calcularPorcentaje(cantPartidos, cantPartidosGanados));
+    float porcentaje = calcularPorcentaje(totalPartidos, cantPartidosGanados);
+
+    if (porcentaje == (int)porcentaje) {
+        printf("Porcentaje de partidos ganados: %d%%\n", (int)porcentaje);
+    } else {
+        printf("Porcentaje de partidos ganados: %.2f%%\n", porcentaje);
+    }
 }
 
 
