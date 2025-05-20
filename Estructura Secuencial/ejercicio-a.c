@@ -55,7 +55,7 @@ void ingresarDatos(){
 }
 
 void procesarDatos(){
-	total = (float)cantidad * precio;
+	total = cantidad * precio;
 }
 
 void imprimirTicket(){
