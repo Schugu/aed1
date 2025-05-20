@@ -13,6 +13,12 @@
 			1.ingresarDatos
 			2.procesarDatos
 			3.imprimirTicket
+			
+	Casos de prueba: 
+		Cant. unidades | Precio unit. | Total
+		  24		   |   2.5        |   60
+		  10		   |   25         |   250
+		  5		   	   |   82         |   410				
 */
 
 // Bibliotecas
