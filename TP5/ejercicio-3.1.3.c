@@ -1,4 +1,5 @@
 /*
+  Grupo 4
   3.1.3. Generar y mostrar la tabla de multiplicar de un número introducido por el teclado.
 
   Método de resolución de problemas
